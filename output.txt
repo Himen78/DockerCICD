@@ -1,0 +1,105 @@
+Docker Compose is now in the Docker CLI, try `docker compose up`
+
+Attaching to selenium-hub, dockerproject_chrome_1, dockerproject_firefox_1
+[36mchrome_1        |[0m 2021-05-27 06:37:31,375 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[36mchrome_1        |[0m 2021-05-27 06:37:31,377 INFO supervisord started with pid 10
+[36mchrome_1        |[0m 2021-05-27 06:37:32,380 INFO spawned: 'xvfb' with pid 12
+[36mchrome_1        |[0m 2021-05-27 06:37:32,382 INFO spawned: 'selenium-node' with pid 13
+[32mselenium-hub    |[0m 2021-05-27 06:37:29,011 INFO Included extra file "/etc/supervisor/conf.d/selenium-hub.conf" during parsing
+[32mselenium-hub    |[0m 2021-05-27 06:37:29,015 INFO supervisord started with pid 9
+[32mselenium-hub    |[0m 2021-05-27 06:37:30,018 INFO spawned: 'selenium-hub' with pid 11
+[32mselenium-hub    |[0m Starting Selenium Hub with configuration:
+[32mselenium-hub    |[0m 2021-05-27 06:37:30,026 INFO success: selenium-hub entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[32mselenium-hub    |[0m {
+[32mselenium-hub    |[0m   "host": "0.0.0.0",
+[32mselenium-hub    |[0m   "port": 4444,
+[32mselenium-hub    |[0m   "role": "hub",
+[32mselenium-hub    |[0m   "maxSession": 5,
+[32mselenium-hub    |[0m   "newSessionWaitTimeout": -1,
+[32mselenium-hub    |[0m   "capabilityMatcher": "org.openqa.grid.internal.utils.DefaultCapabilityMatcher",
+[32mselenium-hub    |[0m   "throwOnCapabilityNotPresent": true,
+[32mselenium-hub    |[0m   "jettyMaxThreads": -1,
+[32mselenium-hub    |[0m   "cleanUpCycle": 5000,
+[32mselenium-hub    |[0m   "browserTimeout": 0,
+[32mselenium-hub    |[0m   "timeout": 1800,
+[32mselenium-hub    |[0m   "debug": false
+[32mselenium-hub    |[0m }
+[32mselenium-hub    |[0m 06:37:30.258 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+[32mselenium-hub    |[0m 06:37:30.364 INFO [GridLauncherV3.lambda$buildLaunchers$5] - Launching Selenium Grid hub on port 4444
+[32mselenium-hub    |[0m 2021-05-27 06:37:30.796:INFO::main: Logging initialized @763ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[32mselenium-hub    |[0m 06:37:31.030 INFO [Hub.start] - Selenium Grid hub is up and running
+[32mselenium-hub    |[0m 06:37:31.031 INFO [Hub.start] - Nodes should register to http://172.22.0.2:4444/grid/register/
+[32mselenium-hub    |[0m 06:37:31.033 INFO [Hub.start] - Clients should connect to http://172.22.0.2:4444/wd/hub
+[33mfirefox_1       |[0m 2021-05-27 06:37:32,701 INFO Included extra file "/etc/supervisor/conf.d/selenium.conf" during parsing
+[33mfirefox_1       |[0m 2021-05-27 06:37:32,703 INFO supervisord started with pid 9
+[36mchrome_1        |[0m Connecting to the Hub using the host selenium-hub and port 4444
+[36mchrome_1        |[0m 2021-05-27 06:37:32,778 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mchrome_1        |[0m 2021-05-27 06:37:32,778 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[36mchrome_1        |[0m 06:37:33.056 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+[36mchrome_1        |[0m 06:37:33.180 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+[36mchrome_1        |[0m 2021-05-27 06:37:33.261:INFO::main: Logging initialized @477ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[36mchrome_1        |[0m 06:37:33.464 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+[36mchrome_1        |[0m 06:37:33.532 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+[36mchrome_1        |[0m 06:37:33.532 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+[36mchrome_1        |[0m 06:37:33.580 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+[33mfirefox_1       |[0m 2021-05-27 06:37:33,707 INFO spawned: 'xvfb' with pid 11
+[33mfirefox_1       |[0m 2021-05-27 06:37:33,711 INFO spawned: 'selenium-node' with pid 12
+[36mchrome_1        |[0m 06:37:33.979 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://selenium-hub:4444/grid/register
+[32mselenium-hub    |[0m 06:37:34.024 INFO [DefaultGridRegistry.add] - Registered a node http://172.22.0.3:5555
+[36mchrome_1        |[0m 06:37:34.026 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+[33mfirefox_1       |[0m Connecting to the Hub using the host selenium-hub and port 4444
+[33mfirefox_1       |[0m 2021-05-27 06:37:34,188 INFO success: xvfb entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33mfirefox_1       |[0m 2021-05-27 06:37:34,188 INFO success: selenium-node entered RUNNING state, process has stayed up for > than 0 seconds (startsecs)
+[33mfirefox_1       |[0m 06:37:34.411 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+[33mfirefox_1       |[0m 06:37:34.508 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Launching a Selenium Grid node on port 5555
+[33mfirefox_1       |[0m 2021-05-27 06:37:34.585:INFO::main: Logging initialized @385ms to org.seleniumhq.jetty9.util.log.StdErrLog
+[33mfirefox_1       |[0m 06:37:34.784 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+[33mfirefox_1       |[0m 06:37:34.854 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 5555
+[33mfirefox_1       |[0m 06:37:34.854 INFO [GridLauncherV3.lambda$buildLaunchers$7] - Selenium Grid node is up and ready to register to the hub
+[33mfirefox_1       |[0m 06:37:34.888 INFO [SelfRegisteringRemote$1.run] - Starting auto registration thread. Will try to register every 5000 ms.
+[33mfirefox_1       |[0m 06:37:35.095 INFO [SelfRegisteringRemote.registerToHub] - Registering the node to the hub: http://selenium-hub:4444/grid/register
+[32mselenium-hub    |[0m 06:37:35.113 INFO [DefaultGridRegistry.add] - Registered a node http://172.22.0.4:5555
+[33mfirefox_1       |[0m 06:37:35.115 INFO [SelfRegisteringRemote.registerToHub] - The node is registered to the hub and ready to use
+[32mselenium-hub    |[0m 06:37:49.693 INFO [RequestHandler.process] - Got a request to create a new session: Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --disable-dev-shm-usage], extensions: []}}
+[32mselenium-hub    |[0m 06:37:49.697 INFO [TestSlot.getNewSession] - Trying to create a new session on test slot {server:CONFIG_UUID=40d96880-93e5-49fc-a16e-d90e715d736b, seleniumProtocol=WebDriver, browserName=chrome, maxInstances=1, platformName=LINUX, version=90.0.4430.85, applicationName=, platform=LINUX}
+[36mchrome_1        |[0m 06:37:49.775 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+[36mchrome_1        |[0m   "browserName": "chrome",
+[36mchrome_1        |[0m   "goog:chromeOptions": {
+[36mchrome_1        |[0m     "args": [
+[36mchrome_1        |[0m       "--headless",
+[36mchrome_1        |[0m       "--disable-gpu",
+[36mchrome_1        |[0m       "--disable-dev-shm-usage"
+[36mchrome_1        |[0m     ],
+[36mchrome_1        |[0m     "extensions": [
+[36mchrome_1        |[0m     ]
+[36mchrome_1        |[0m   }
+[36mchrome_1        |[0m }
+[36mchrome_1        |[0m 06:37:49.777 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+[36mchrome_1        |[0m Starting ChromeDriver 90.0.4430.24 (4c6d850f087da467d926e8eddb76550aed655991-refs/branch-heads/4430@{#429}) on port 13490
+[36mchrome_1        |[0m Only local connections are allowed.
+[36mchrome_1        |[0m Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[36mchrome_1        |[0m ChromeDriver was started successfully.
+[36mchrome_1        |[0m [1622097469.797][SEVERE]: bind() failed: Cannot assign requested address (99)
+[36mchrome_1        |[0m 06:37:50.012 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+[36mchrome_1        |[0m 06:37:50.032 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session d58d9b1539f0f4b96e37c9b56828cb90 (org.openqa.selenium.chrome.ChromeDriverService)
+[33mfirefox_1       |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[36mchrome_1        |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[36mchrome_1        |[0m 2021-05-27 06:37:54,037 WARN received SIGTERM indicating exit request
+[36mchrome_1        |[0m 2021-05-27 06:37:54,037 INFO waiting for xvfb, selenium-node to die
+[33mfirefox_1       |[0m 2021-05-27 06:37:54,140 WARN received SIGTERM indicating exit request
+[33mfirefox_1       |[0m 2021-05-27 06:37:54,141 INFO waiting for xvfb, selenium-node to die
+[36mchrome_1        |[0m 2021-05-27 06:37:55,039 INFO stopped: selenium-node (terminated by SIGTERM)
+[33mfirefox_1       |[0m 2021-05-27 06:37:55,143 INFO stopped: selenium-node (terminated by SIGTERM)
+[36mchrome_1        |[0m 2021-05-27 06:37:56,042 INFO stopped: xvfb (terminated by SIGTERM)
+[36mchrome_1        |[0m Shutdown complete
+[33mfirefox_1       |[0m 2021-05-27 06:37:56,146 INFO stopped: xvfb (terminated by SIGTERM)
+[33mfirefox_1       |[0m Shutdown complete
+[36mdockerproject_chrome_1 exited with code 143
+[0m[33mdockerproject_firefox_1 exited with code 143
+[0m[32mselenium-hub    |[0m Trapped SIGTERM/SIGINT/x so shutting down supervisord...
+[32mselenium-hub    |[0m 2021-05-27 06:37:58,707 WARN received SIGTERM indicating exit request
+[32mselenium-hub    |[0m 2021-05-27 06:37:58,707 INFO waiting for selenium-hub to die
+[32mselenium-hub    |[0m 2021-05-27 06:37:59,709 INFO stopped: selenium-hub (terminated by SIGTERM)
+[32mselenium-hub    |[0m Shutdown complete
+[32mselenium-hub exited with code 143
+[0m

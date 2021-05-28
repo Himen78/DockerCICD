@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-05-27T12:07:22 IST" name="All Test Suite" finished-at="2021-05-27T12:08:00 IST" duration-ms="38128">
+    <groups>
+    </groups>
+    <test started-at="2021-05-27T12:07:22 IST" name="Test" finished-at="2021-05-27T12:08:00 IST" duration-ms="38128">
+      <class name="com.remote.dockervalidation.ChromeTestOne">
+        <test-method is-config="true" signature="dockerStart()[pri:0, instance:com.remote.dockervalidation.ChromeTestOne@6f45df59]" started-at="2021-05-27T12:07:22 IST" name="dockerStart" finished-at="2021-05-27T12:07:48 IST" duration-ms="26458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dockerStart -->
+        <test-method signature="TestOne()[pri:0, instance:com.remote.dockervalidation.ChromeTestOne@6f45df59]" started-at="2021-05-27T12:07:49 IST" name="TestOne" finished-at="2021-05-27T12:07:52 IST" duration-ms="3302" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestOne -->
+        <test-method is-config="true" signature="dockerStop()[pri:0, instance:com.remote.dockervalidation.ChromeTestOne@6f45df59]" started-at="2021-05-27T12:07:52 IST" name="dockerStop" finished-at="2021-05-27T12:08:00 IST" duration-ms="8298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dockerStop -->
+      </class> <!-- com.remote.dockervalidation.ChromeTestOne -->
+    </test> <!-- Test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
